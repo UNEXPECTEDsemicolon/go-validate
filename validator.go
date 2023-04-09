@@ -176,7 +176,6 @@ func validateImpl(vVal reflect.Value, vTags []string, callstack string) (valErrs
 			if matches == nil || len(matches) < 3 {
 				return nil, ErrInvalidValidatorSyntax
 			}
-			fmt.Println("matches: ", matches)
 			for i := 1; i < len(matches); i += 2 {
 				if len(matches[i]) == 0 {
 					break
